@@ -8,14 +8,16 @@
         private $charset;
 
         public function __construct(){
-            $this->host = 'localhost';
-            $this->db = '';
+            // Parámetros de conexión
+            $this->host = 'localhost:3307'; //localhost
+            $this->db = 'shopping';
             $this->user = 'root';
-            $this->password = 'Juan50395bg*';
+            $this->password = 'nuviavelasquez07'; //'Juan50395bg*'
             $this->charset = 'utf8mb4';
         }
 
-        public function connect(){
+        public function connect(){ 
+            //intento de conexion a la bd
             try {
                 $connection = "mysql:host=". $this->host . ";dbname=". $this->db . ";charset=". $this->charset;
                 
@@ -23,6 +25,7 @@
                 
                 $pdo = new PDO($connection, $this->user, $this->password, $options);
 
+                // echo "Conexion Exitosa";
                 return $pdo;
 
             } catch (PDOExeption $e) {
