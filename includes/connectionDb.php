@@ -12,7 +12,7 @@
             $this->host = 'localhost:3307'; //localhost
             $this->db = 'shopping';
             $this->user = 'root';
-            $this->password = 'nuviavelasquez07'; //'Juan50395bg*'
+            $this->password = ''; 
             $this->charset = 'utf8mb4';
         }
 
