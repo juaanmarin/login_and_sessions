@@ -4,6 +4,9 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+/* estilos de la vista home */
+
 #menu{
     background-color: rgb(214, 214, 214);
 }
@@ -16,4 +19,56 @@ section{
     padding: 10px;
     display: flex;
     justify-content: center;
+}
+
+/* estilos de la vista login */
+
+#section-login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form{
+    padding: 20px;
+    height: 100%;
+    width: 60%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    align-items: center;
+    background-color: antiquewhite;
+}
+.field{
+    height: 30px;
+    width: 200px;
+    text-align: center;
+    font-size: 17px;
+    border-color: antiquewhite;
+    border-radius: 10px;
+}
+
+#button{
+    height: 30px;
+    width: 120px;
+    border-color: antiquewhite;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 17px;
+    transition: 600ms;
+}
+
+#button:hover{
+    height: 33px;
+    width: 125px;
+    background-color: rgb(252, 224, 188);
+}
+.view-pass{
+    border: none;
+    cursor: pointer;
+    background-color: antiquewhite;
+}
+.view-pass img{
+    height: 22px;
+    width: 25px;
 }

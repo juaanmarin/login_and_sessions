@@ -1,5 +1,7 @@
 <?php
 
+    include_once 'includes/connectionDb.php';
+
     //se extiende de la clase BD donde esta la conexion a la bd
     class User extends DB{
         
