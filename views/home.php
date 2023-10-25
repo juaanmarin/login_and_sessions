@@ -12,13 +12,14 @@
             <ul>
                 <li><h4>Home</h4></li>
                 <li class="sing-off">
-                    <a href="#">Sing OFF</a>
+                    <a href="includes/logOut.php">Sing OFF</a>
                 </li>
             </ul>
         </div>
 
         <section>
-            <h2>welcome</h2>
+            <h2>welcome <?php echo $user->getName(); ?></h2>
+            
         </section>
     </body>
 </html>
