@@ -1,7 +1,7 @@
-function mostrarContrasena(){
+function mostrarContrasena(cb){
     var tipo = document.getElementById("password");
 
-    if(tipo.type == "password"){
+    if(cb.checked){
         tipo.type = "text";
     }else{
         tipo.type = "password";

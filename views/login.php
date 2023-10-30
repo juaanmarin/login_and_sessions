@@ -4,12 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link href="styles/main.css" rel="stylesheet">
+    <link href="styles/login_style.css" rel="stylesheet">
     <title>Login</title>
 </head>
     <body>
-        <section id="section-login">
+        <div id="section-login">
             <form action="" method="post">
                 <?php
                     if(isset($errorLogin)){
@@ -17,25 +16,29 @@
                     }
                 ?>
                 <h2>Login</h2>
-                <p>
-                    User Name : <br>
-                    <input type="text" name="username" class="field"> 
-                </p>
-                <p>
-                    Password : <br>
-                    <input type="password" name="password" id='password' class="field">
-                    
-                    <button class="view-pass" type="button" onclick="mostrarContrasena()">
-                        <img src="resources/img/ojo.png" alt="">
-                    </button>
 
-                </p>
-                <p>
-                    <input type="submit" value="Log-in" id='button'>
-                </p>
+                <div class="input-wrapper">
+                    <input class="input" type="text" name="username" placeholder=" " data-placeholder="username" required>
+                    <span class="placeholder">User name</span>
+                </div> 
+                <div class="input-wrapper">
+                    <input class="input" type="password" name="password" placeholder=" " data-placeholder="password" id='password' required>
+                    <span class="placeholder">Password</span>
+                </div>  
+                <div class="pass-bnt">
+                    <!-- <div> -->
+                        <input type="checkbox" name="check_mostrar" id="checkbox" onclick='mostrarContrasena(this)'>See Password
+                    <!-- </div> -->
+                    <!-- <div> -->
+                        <p>recover password</p>
+                    <!-- </div> -->
+                </div>
+                <div class="buttons">
+                    <input type="submit" class="btn btn-primary pull-right" value="Log-in" id='button'>
+                </div>  
                 
             </form>
-        </section>
+        </div>
 
     </body>
 
