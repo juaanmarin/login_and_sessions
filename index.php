@@ -31,7 +31,8 @@
 
     }else{
         // echo 'login';
-        include_once 'views/login.php';
+        //include_once 'views/login.php';
+        include_once 'views/singup.php';
     }
     
 
