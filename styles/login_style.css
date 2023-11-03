@@ -24,7 +24,7 @@ body {
 form{
     padding: 20px;
     height: 100%;
-    width: 30%;
+    width: 50%;
     border-radius: 10px;
     display: flex;
     flex-direction: column;

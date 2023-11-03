@@ -19,22 +19,25 @@
 
                 <div class="input-wrapper">
                     <input class="input" type="text" name="username" placeholder=" " data-placeholder="username" required>
+                    <span class="placeholder">E-mail</span>
+                </div> 
+                <div class="input-wrapper">
+                    <input class="input" type="text" name="username" placeholder=" " data-placeholder="username" required>
+                    <span class="placeholder">Name</span>
+                </div> 
+                <div class="input-wrapper">
+                    <input class="input" type="text" name="username" placeholder=" " data-placeholder="username" required>
                     <span class="placeholder">User name</span>
                 </div> 
                 <div class="input-wrapper">
                     <input class="input" type="password" name="password" placeholder=" " data-placeholder="password" id='password' required>
                     <span class="placeholder">Password</span>
                 </div>  
-                <div class="pass-bnt">
-                    <!-- <div> -->
-                        <input type="checkbox" name="check_mostrar" id="checkbox" onclick='mostrarContrasena(this)'>See Password
-                    <!-- </div> -->
-                    <!-- <div> -->
-                        <p>recover password</p>
-                    <!-- </div> -->
+                <div class="pass-btn">
+                    <input type="checkbox" name="check_mostrar" id="checkbox" onclick='mostrarContrasena(this)'>See Password
                 </div>
                 <div class="buttons">
-                    <input type="submit" class="btn btn-primary pull-right" value="Log-in" id='button'>
+                    <input type="submit" class="btn btn-primary pull-right" value="Sing-up" id='button'>
                 </div>  
                 
             </form>
