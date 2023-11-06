@@ -12,7 +12,7 @@
         $user->setUser($userSession->getCurrentUser());
         include_once 'views/home.php';
 
-    }else if(isset($_POST['username']) && isset($_POST['password'])){
+    }else if(isset($_POST['username']) && isset($_POST['password']) && isset($_POST['Log-in'])){
         //echo "Validacion de login";
         $userForm = $_POST['username'];
         $passForm = $_POST['password'];
@@ -28,6 +28,18 @@
             $errorLogin = 'Incorrect username or password';
             include_once 'views/login.php';
         }
+
+    }else if (isset($_POST['sign-up'])) {
+        if(isset($_POST['e-mail']) && isset($_POST['name']) && isset($_POST['username']) && isset($_POST['password'])){
+            $name = $_POST['name'];
+            $userName = $_POST['username'];
+            $password = $_POST['password'];
+            $email = $_POST['e-mail'];
+
+            $register = $user->registerUser($name, $userName, $password, $email);
+        }
+
+        include_once 'views/signup.php';
 
     }else{
         // echo 'login';

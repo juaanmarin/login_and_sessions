@@ -26,17 +26,15 @@
                     <span class="placeholder">Password</span>
                 </div>  
                 <div class="pass-bnt">
-                    <!-- <div> -->
-                        <input type="checkbox" name="check_mostrar" id="checkbox" onclick='mostrarContrasena(this)'>See Password
-                    <!-- </div> -->
-                    <!-- <div> -->
-                        <p>recover password</p>
-                    <!-- </div> -->
+                    <input type="checkbox" name="check_mostrar" id="checkbox" onclick='mostrarContrasena(this)'>See Password
                 </div>
                 <div class="buttons">
-                    <input type="submit" class="btn btn-primary pull-right" value="Log-in" id='button'>
+                    <input type="submit" class="btn btn-primary pull-right" name="Log-in" value="Log-in" id='button'>
                 </div>  
-                
+                    
+            </form>
+            <form class='register' action="" method="post">
+                <p>new to our website?</p><button type="submit" name='sign-up' value='sign-up'> sign-up </button>
             </form>
         </div>
 
