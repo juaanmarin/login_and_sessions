@@ -1,37 +1,53 @@
+/* estilos de la vista login */
 *{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
 }
-
 html {
   height: 100%;
 }
 body {
   min-height: 100%;
   display: flex;
-  flex-direction: column;
+  align-items: center;
   justify-content: center;
+  background-color: #FEE440;
 }
-/* estilos de la vista login */
-
-#section-login{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+.holder {
+  width: 45%;
+  max-width: 420px;
+  border: solid 1px;
+  border-color: #CBD8E3;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0px 10px 10px #000000;
 }
 form{
-    padding: 20px;
-    height: 100%;
-    width: 50%;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    gap: 18px;
-    align-items: center;
-    background-color: antiquewhite;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  align-items: center;
+}
+.register{
+  flex-direction: row;
+  justify-content: center;
+  gap: 5px;
+}
+.register button{
+  border: none;
+  background-color: transparent;
+  font-size: 19px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.register button:hover{
+  color: #0088ff;
+}
+img{
+  width: 40%;
 }
 .input-wrapper {
   max-width: 360px;
@@ -80,7 +96,6 @@ form{
   transition: .2s ease;
   border-color:#F52C5C;
 }
-
 .input:invalid:not(:placeholder-shown) + .placeholder{
   transition: .2s ease;
   color:#F52C5C;
@@ -90,43 +105,36 @@ form{
   color: #F52C5C;
   transition: .2s ease;
 }
-
 #checkbox{
   height: 25px;
   width: 25px;
   cursor: pointer;
 }
-
 .pass-bnt{
-  width: 87%;
+  width: 99%;
+  max-width: 360px;
   display: flex;
-  gap: 10px;
   align-items: center;
+  gap: 10px;
 }
 .buttons{
   margin-top: 10px;
+  width: 100%;
+  text-align: center;
 }
 .btn {
-  width: 230px;
-  background: #fff;
-  color: #333;
+  width: 70%;
   cursor: pointer;
   border: none;
-  white-space: normal;
-  letter-spacing: 0.25px;
-  font-weight: 400;
   font-size: 14px;
   padding: 8px 16px;
   border-radius: 4px;
   line-height: 20px;
-  min-width: 88px;
-  transition: 250ms;
 }
 .btn:hover {
   background: #ddd;
   transition: 250ms;
 }
-
 .btn-primary {
   background: #1a73e8;
   color: #fff;
@@ -137,17 +145,3 @@ form{
   box-shadow: 0 1px 1px 0 rgba(66, 133, 244, 0.45), 0 1px 3px 1px rgba(66, 133, 244, 0.3);
   transition: 250ms;
 } 
-.register{
-  flex-direction: row;
-  gap: 5px;
-}
-.register button{
-  border: none;
-  background-color: transparent;
-  font-size: 19px;
-  text-decoration: underline;
-  cursor: pointer;
-}
-.register button:hover{
-  color: #0088ff;
-}

@@ -8,13 +8,10 @@
     <title>Sing Up</title>
 </head>
     <body>
-        <div id="section-login">
+        <div class="holder">
             <form action="" method="post">
-                <?php
-                    if(isset($register)){
-                        echo $register;
-                    }
-                ?>
+                <?php if(isset($register)){echo $register;}?>
+                <h2>Sign Up</h2>
                 <div class="input-wrapper">
                     <input class="input" type="text" name="e-mail" placeholder=" " data-placeholder="e-mail" required>
                     <span class="placeholder">E-mail</span>
