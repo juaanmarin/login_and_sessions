@@ -10,12 +10,12 @@
 <body>
     <div id="menu">
         <ul>
-            <li>
-                <h4>Home</h4>
-            </li>
-            <li class="sing-off">
+            <!-- <li> -->
+            <h1>Home</h1>
+            <!-- </li> -->
+            <!-- <li class="sing-off">
                 <a href="includes/logOut.php">Sing OFF</a>
-            </li>
+            </li> -->
         </ul>
     </div>
 
@@ -25,18 +25,17 @@
             <div class="title-content">
                 <h3>WELOCOME</h3>
                 <hr />
-                <div class="intro"><?php echo $user->getName();?> Yllamco laboris nisi ut aliquip ex ea commodo.</div>
+                <div class="intro">Welcome <?php echo $user->getName();?> this is your card.</div>
             </div><!-- /.title-content -->
             <div class="card-info">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim.
+                This is a practice of a complete login, to leave the main page and return to the beginning of the section click the link.
                 <br>
                 <a href="includes/logOut.php" class='sign_off'>Sing OFF</a>
             </div><!-- /.card-info -->
             <div class="utility-info">
                 <ul class="utility-list">
                     <li class="comments">12</li>
-                    <li class="date">03.12.2015</li>
+                    <li class="date"><?php echo date("d.m.y");?></li>
                 </ul>
             </div><!-- /.utility-info -->
             <!-- overlays -->

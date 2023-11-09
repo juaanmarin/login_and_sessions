@@ -1,24 +1,26 @@
 /* estilos de la vista home */
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700);
+@import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic);
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: Arial, Helvetica, sans-serif; */
 }
 html {
     height: 100%;
 }
 #menu{
-    background-color: #FF865E;
+    background-color: #ff9355;
+    padding: 20px;
 }
 #menu ul{
     padding: 10px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    text-decoration: none;
 }
 
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700);
-@import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic);
 * {
   box-sizing: border-box;
   margin: 0;
@@ -26,7 +28,7 @@ html {
 }
 
 body {
-  background: #323c41;
+  background: #ff9355;
 }
 
 .blog-card {
